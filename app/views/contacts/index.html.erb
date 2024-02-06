@@ -1,0 +1,12 @@
+<h1>Here are the contacts + their companies</h1>
+
+<%contacts = Contact.all%>
+
+
+<%for contact in contacts%>
+<li>
+<%=contact.first_name%> <%=contact.last_name%>, <%=company = Company.find_by({"id"=> contact.company_id}).name%>
+</li>
+
+
+<%end%>

@@ -1,0 +1,19 @@
+<h1>Hello World</h1>
+
+<%companies = Company.all%>
+
+<%for company in companies%>
+
+
+
+<%end%>
+
+<ul>
+  <%for company in companies%>
+
+  <li>
+  <%=company.name%>
+  </li>
+
+  <%end%>
+</ul>
